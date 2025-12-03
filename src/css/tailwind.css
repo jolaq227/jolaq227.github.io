@@ -297,6 +297,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -464,6 +467,9 @@
     @media (width >= 1320px) {
       max-width: 1320px !important;
     }
+  }
+  .-m-4 {
+    margin: calc(var(--spacing) * -4);
   }
   .m-1 {
     margin: calc(var(--spacing) * 1);
@@ -913,6 +919,10 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -1714,6 +1724,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/50 {
     background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
   }
@@ -1784,6 +1797,10 @@
   .via-none {
     --tw-gradient-via-stops: initial;
   }
+  .from-stroke {
+    --tw-gradient-from: var(--color-stroke);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-stroke\/0 {
     --tw-gradient-from: color-mix(in oklab, var(--color-stroke) 0%, transparent);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1792,6 +1809,10 @@
     --tw-gradient-via: var(--color-stroke);
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-stroke {
+    --tw-gradient-to: var(--color-stroke);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-stroke\/0 {
     --tw-gradient-to: color-mix(in oklab, var(--color-stroke) 0%, transparent);
@@ -1980,6 +2001,9 @@
   }
   .px-\[22px\] {
     padding-inline: 22px;
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
