@@ -2851,3 +2851,10 @@
 @property --tw-scale-y {
   syntax: "*";
   inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
