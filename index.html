@@ -1,0 +1,1295 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Muhammed Jolak | Software Engineer
+  </title>
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
+
+  <!-- ==== WOW JS ==== -->
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <!-- ====== Navbar Section Start -->
+  <div class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header">
+    <div class="container px-4 mx-auto">
+      <div class="relative flex items-center justify-between -mx-4">
+        <div class="max-w-full px-4 w-60">
+          <a href="index.html" class="block w-full py-5 navbar-logo">
+            <img src="assets/images/logo/logo-white.svg" alt="logo" class="w-full header-logo" />
+          </a>
+        </div>
+        <div class="flex items-center justify-between w-full px-4">
+          <div>
+            <button id="navbarToggler"
+              class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+            </button>
+            <nav id="navbarCollapse"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+              <ul class="blcok lg:flex 2xl:ml-20">
+                <li class="relative group">
+                  <a href="#home"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                    الرئيسية
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a href="#about"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                    من أنا
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a href="#services"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                    الخدمات
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a href="#faq"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                    الأسئلة الشائعة
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a href="#project"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                    أعمالي
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a href="#contact"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                    تواصل معي
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center justify-end pr-16 lg:pr-0">
+            <label for="themeSwitcher" class="inline-flex items-center cursor-pointer" aria-label="themeSwitcher"
+              name="themeSwitcher">
+              <input type="checkbox" name="themeSwitcher" id="themeSwitcher" class="sr-only" />
+              <span class="block text-white dark:hidden">
+                <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3125 1.50001C12.675 1.31251 12.0375 1.16251 11.3625 1.05001C10.875 0.975006 10.35 1.23751 10.1625 1.68751C9.93751 2.13751 10.05 2.70001 10.425 3.00001C13.0875 5.47501 14.0625 9.11251 12.975 12.525C11.775 16.3125 8.25001 18.975 4.16251 19.0875C3.63751 19.0875 3.22501 19.425 3.07501 19.9125C2.92501 20.4 3.15001 20.925 3.56251 21.1875C4.50001 21.75 5.43751 22.2 6.37501 22.5C7.46251 22.8375 8.58751 22.9875 9.71251 22.9875C11.625 22.9875 13.5 22.5 15.1875 21.5625C17.85 20.1 19.725 17.7375 20.55 14.8875C22.1625 9.26251 18.975 3.37501 13.3125 1.50001ZM18.9375 14.4C18.2625 16.8375 16.6125 18.825 14.4 20.0625C12.075 21.3375 9.41251 21.6 6.90001 20.85C6.63751 20.775 6.33751 20.6625 6.07501 20.55C10.05 19.7625 13.35 16.9125 14.5875 13.0125C15.675 9.56251 15 5.92501 12.7875 3.07501C17.5875 4.68751 20.2875 9.67501 18.9375 14.4Z" />
+                </svg>
+              </span>
+              <span class="hidden text-white dark:block">
+                <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2172_3070)">
+                    <path
+                      d="M12 6.89999C9.18752 6.89999 6.90002 9.18749 6.90002 12C6.90002 14.8125 9.18752 17.1 12 17.1C14.8125 17.1 17.1 14.8125 17.1 12C17.1 9.18749 14.8125 6.89999 12 6.89999ZM12 15.4125C10.125 15.4125 8.58752 13.875 8.58752 12C8.58752 10.125 10.125 8.58749 12 8.58749C13.875 8.58749 15.4125 10.125 15.4125 12C15.4125 13.875 13.875 15.4125 12 15.4125Z" />
+                    <path
+                      d="M12 4.2375C12.45 4.2375 12.8625 3.8625 12.8625 3.375V1.5C12.8625 1.05 12.4875 0.637497 12 0.637497C11.55 0.637497 11.1375 1.0125 11.1375 1.5V3.4125C11.175 3.8625 11.55 4.2375 12 4.2375Z" />
+                    <path
+                      d="M12 19.7625C11.55 19.7625 11.1375 20.1375 11.1375 20.625V22.5C11.1375 22.95 11.5125 23.3625 12 23.3625C12.45 23.3625 12.8625 22.9875 12.8625 22.5V20.5875C12.8625 20.1375 12.45 19.7625 12 19.7625Z" />
+                    <path
+                      d="M18.1125 6.74999C18.3375 6.74999 18.5625 6.67499 18.7125 6.48749L19.9125 5.28749C20.25 4.94999 20.25 4.42499 19.9125 4.08749C19.575 3.74999 19.05 3.74999 18.7125 4.08749L17.5125 5.28749C17.175 5.62499 17.175 6.14999 17.5125 6.48749C17.6625 6.67499 17.8875 6.74999 18.1125 6.74999Z" />
+                    <path
+                      d="M5.32501 17.5125L4.12501 18.675C3.78751 19.0125 3.78751 19.5375 4.12501 19.875C4.27501 20.025 4.50001 20.1375 4.72501 20.1375C4.95001 20.1375 5.17501 20.0625 5.32501 19.875L6.52501 18.675C6.86251 18.3375 6.86251 17.8125 6.52501 17.475C6.18751 17.175 5.62501 17.175 5.32501 17.5125Z" />
+                    <path
+                      d="M22.5 11.175H20.5875C20.1375 11.175 19.725 11.55 19.725 12.0375C19.725 12.4875 20.1 12.9 20.5875 12.9H22.5C22.95 12.9 23.3625 12.525 23.3625 12.0375C23.3625 11.55 22.95 11.175 22.5 11.175Z" />
+                    <path
+                      d="M4.23751 12C4.23751 11.55 3.86251 11.1375 3.37501 11.1375H1.50001C1.05001 11.1375 0.637512 11.5125 0.637512 12C0.637512 12.45 1.01251 12.8625 1.50001 12.8625H3.41251C3.86251 12.8625 4.23751 12.45 4.23751 12Z" />
+                    <path
+                      d="M18.675 17.5125C18.3375 17.175 17.8125 17.175 17.475 17.5125C17.1375 17.85 17.1375 18.375 17.475 18.7125L18.675 19.9125C18.825 20.0625 19.05 20.175 19.275 20.175C19.5 20.175 19.725 20.1 19.875 19.9125C20.2125 19.575 20.2125 19.05 19.875 18.7125L18.675 17.5125Z" />
+                    <path
+                      d="M5.32501 4.125C4.98751 3.7875 4.46251 3.7875 4.12501 4.125C3.78751 4.4625 3.78751 4.9875 4.12501 5.325L5.32501 6.525C5.47501 6.675 5.70001 6.7875 5.92501 6.7875C6.15001 6.7875 6.37501 6.7125 6.52501 6.525C6.86251 6.1875 6.86251 5.6625 6.52501 5.325L5.32501 4.125Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2172_3070">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Navbar Section End -->
+
+  <!-- ====== Hero Section Start -->
+  <div id="home" class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px] h-screen">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="w-full px-4">
+          <div class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
+            <h1
+              class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
+              Muhammed Jolak
+            </h1>
+            <p class="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
+              أنا مهندس ومطور برمجيات متخصص في بناء حلول برمجية متكاملة تساعد الشركات والأفراد على النمو.
+            </p>
+            <ul class="flex flex-wrap items-center justify-center gap-5 mb-10">
+              <li>
+                <a href="#project"
+                  class="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color">
+                  أعمالي
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark">
+                  تواصل معي
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Hero Section End -->
+
+  <!-- ====== About Section Start -->
+  <section id="about" class="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
+            <span class="block mb-2 text-lg font-semibold text-primary">
+              من أنا؟
+            </span>
+            <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+              مهندس برمجيات
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="wow fadeInUp" data-wow-delay=".2s">
+        <div class="flex flex-wrap items-center -mx-4">
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="flex flex-wrap -mx-2 sm:-mx-4 lg:-mx-2 xl:-mx-4">
+              <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                <div class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
+                  <img src="./assets/images/about/about-image-02.jpg" alt="about image"
+                    class="object-cover object-center w-full h-full" />
+                </div>
+
+                <div
+                  class="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
+                  <div>
+                    <span class="block text-5xl font-extrabold text-white">
+                      +30
+                    </span>
+                    <span class="block text-base font-semibold text-white">
+                      مشروع
+                    </span>
+                    <span class="block text-base font-medium text-white text-opacity-70">
+                      وتديب ناجح
+                    </span>
+                  </div>
+                  <div>
+                    <span class="absolute top-0 left-0 -z-10">
+                      <svg width="106" height="144" viewBox="0 0 106 144" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.1" x="-67" y="47.127" width="113.378" height="131.304"
+                          transform="rotate(-42.8643 -67 47.127)" fill="url(#paint0_linear_1416_214)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1416_214" x1="-10.3111" y1="47.127" x2="-10.3111"
+                            y2="178.431" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </span>
+                    <span class="absolute top-0 right-0 -z-10">
+                      <svg width="130" height="97" viewBox="0 0 130 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.1" x="0.86792" y="-6.67725" width="155.563" height="140.614"
+                          transform="rotate(-42.8643 0.86792 -6.67725)" fill="url(#paint0_linear_1416_215)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1416_215" x1="78.6495" y1="-6.67725" x2="78.6495"
+                            y2="133.937" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </span>
+                    <span class="absolute bottom-0 right-0 -z-10">
+                      <svg width="175" height="104" viewBox="0 0 175 104" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.1" x="175.011" y="108.611" width="101.246" height="148.179"
+                          transform="rotate(137.136 175.011 108.611)" fill="url(#paint0_linear_1416_216)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1416_216" x1="225.634" y1="108.611" x2="225.634" y2="256.79"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                <div class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
+                  <img src="./assets/images/about/about-image-01.jpg" alt="about image"
+                    class="object-cover object-center w-full h-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="mb-12 max-w-[540px] lg:mb-0">
+              <h2
+                class="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
+                أنا محمد جولاق، مهندس برمجيات.
+              </h2>
+              <p class="text-base leading-relaxed text-body-color dark:text-dark-6">
+                بدأت رحلتي في عام 2017 وأنا طالب في المرحلة الثانوية، تعلمت تصميم واجهات الويب (HTML, CSS, JS) ذاتياً، وبعدها حولت شغفي إلى مسار أكاديمي ومهني.
+                <br />
+                <br />
+                درست هندسة الحاسوب في تركيا، وتخرجت بالمركز الأول على الدفعة. لم أكتفِ بالدراسة النظرية، كنت أعمل كمبرمج وفريلانسر أثناء الدراسة وهذا مازاد خبرتي العملية في المجال.
+                <br />
+فور تخرجي، انطلقت في سوق العمل عن بعد مع شركات عديدة، تخصصت في بناء الأنظمة المعقدة مثل أنظمة إدارة العملاء (CRM)، الأنظمة المحاسبية، وحلول إدارة الشركات، بالإضافة إلى تطوير مواقع ناجحة ساعدت شركات ناشئة على الانطلاق بقوة.                <br />
+                <br />
+                بجانب عملي كمطور برمجيات، أفتخر بكوني شريكاً معرفياً لعدة منظمات مرموقة. من خلال ورش عمل تفاعلية ومعسكرات تدريبية، ساهمت في تطوير مهارات ألآف الشباب بالتعاون مع اليونيسيف، جمعية Habitat، والهلال الأحمر التركي.
+                <br />
+                أنواع التدريبات التي أقدمها:
+              </p>
+              <ul class="text-base leading-relaxed text-body-color dark:text-dark-6">
+                <li><b>الذكاء الاصطناعي (AI):</b> كيفية تسخير التقنيات الحديثة في الحياة العملية.</li>
+                <li><b>البلوكتشين (Blockchain):</b> فهم مستقبل التعاملات الرقمية.</li>
+                <li><b>أدوات جوجل (Google Tools):</b> تعزيز الإنتاجية الرقمية.</li>
+                <li><b>ريادة الأعمال:</b> بناء عقلية المشاريع الناشئة من الصفر.</li>
+              </ul>
+              <br />
+              <p class="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+أؤمن أن الكود النظيف هو أساس النجاح. عندما لا أكون مشغولاً بالعمل، ستجدني غالباً أقرأ أو أكتب.               
+              </p>
+
+              <!-- <a href="javascript:void(0)"
+                class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border rounded-md border-primary bg-primary px-7 hover:border-blue-dark hover:bg-blue-dark">
+                معرفة المزيد
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== About Section End -->
+
+  <!-- ====== Features Section Start -->
+  <section id="services" class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
+            <span class="block mb-2 text-lg font-semibold text-primary">
+              الخدمات
+            </span>
+            <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+              ماذا أقدم لك؟
+            </h2>
+            <p class="text-base text-body-color dark:text-dark-6">
+              من تطوير الأنظمة المعقدة إلى تمكين العقول الشابة، أضع خبرتي التقنية لتكون جسراً لنجاحك.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="mb-12 wow fadeInUp group" data-wow-delay=".1s">
+            <div
+              class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
+              <span
+                class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0 0 0)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.00312 12.1255C2.07025 17.59 6.52083 22.0001 12.0014 22.0001C17.5238 22.0001 22.0005 17.5224 22.0005 12.0002C22.0005 6.49245 17.5473 2.02384 12.0449 2.00038C12.0304 2.00013 12.0158 2 12.0012 2C11.9866 2 11.972 2.00013 11.9574 2.00038C6.49755 2.02389 2.07089 6.42415 2.00314 11.8733C2.00106 11.9151 2 11.9572 2 11.9996C2 12.0418 2.00105 12.0838 2.00312 12.1255ZM8.97906 8.97712C8.83291 9.91428 8.75196 10.9319 8.75196 11.9996C8.75196 13.0674 8.83291 14.0849 8.97906 15.0221C9.91569 15.168 10.9326 15.2489 11.9996 15.2489C13.0679 15.2489 14.086 15.1678 15.0235 15.0216C15.1696 14.0845 15.2505 13.0671 15.2505 11.9996C15.2505 10.932 15.1696 9.91466 15.0235 8.97764C14.086 8.83136 13.0679 8.75032 11.9996 8.75032C10.9326 8.75032 9.91568 8.83117 8.97906 8.97712ZM7.419 9.29819C7.30981 10.1594 7.25196 11.0661 7.25196 11.9996C7.25196 12.9331 7.30981 13.8398 7.419 14.701C6.8082 14.5418 6.25021 14.3524 5.75696 14.1391C4.976 13.8015 4.39155 13.4187 4.01306 13.0318C3.66763 12.6787 3.52335 12.3559 3.50265 12.072C3.50245 12.0481 3.50235 12.0242 3.50235 12.0002C3.50235 11.9758 3.50245 11.9514 3.50266 11.927C3.5234 11.6432 3.66769 11.3204 4.01306 10.9674C4.39155 10.5805 4.976 10.1978 5.75696 9.86009C6.25021 9.64683 6.8082 9.45746 7.419 9.29819ZM9.30032 7.4171C10.1609 7.30808 11.0669 7.25032 11.9996 7.25032C12.9336 7.25032 13.8407 7.30824 14.7023 7.41753C14.5431 6.8073 14.3538 6.24981 14.1407 5.75696C13.8031 4.976 13.4203 4.39155 13.0335 4.01306C12.6606 3.64825 12.3214 3.5078 12.0263 3.50032L12.0014 3.50028L11.9761 3.50032C11.6811 3.50781 11.3419 3.64827 10.969 4.01306C10.5821 4.39155 10.1994 4.976 9.86173 5.75696C9.64869 6.24969 9.45948 6.80704 9.30032 7.4171ZM16.5836 9.29907C16.6927 10.16 16.7505 11.0664 16.7505 11.9996C16.7505 12.9328 16.6927 13.8392 16.5836 14.7001C17.1931 14.5411 17.7499 14.352 18.2422 14.1391C19.0232 13.8015 19.6077 13.4187 19.9862 13.0318C20.3613 12.6483 20.4992 12.3005 20.4992 11.9996C20.4992 11.6987 20.3613 11.3509 19.9862 10.9674C19.6077 10.5805 19.0232 10.1978 18.2422 9.86009C17.7499 9.64723 17.1931 9.45816 16.5836 9.29907ZM14.7023 16.5817C13.8407 16.691 12.9336 16.7489 11.9996 16.7489C11.0669 16.7489 10.1609 16.6911 9.30032 16.5821C9.45948 17.1922 9.64869 17.7495 9.86173 18.2422C10.1994 19.0232 10.5821 19.6077 10.969 19.9862C11.3525 20.3613 11.7003 20.4992 12.0012 20.4992C12.3021 20.4992 12.65 20.3613 13.0335 19.9861C13.4203 19.6077 13.8031 19.0232 14.1407 18.2422C14.3538 17.7494 14.5431 17.1919 14.7023 16.5817ZM7.69311 16.3082C6.76016 16.1055 5.90633 15.8379 5.16168 15.5159C4.75227 15.3389 4.36866 15.1424 4.01951 14.9265C4.87777 17.2671 6.73603 19.1253 9.07661 19.9833C8.85983 19.6332 8.66253 19.2484 8.48491 18.8375C8.16319 18.0934 7.89575 17.2403 7.69311 16.3082ZM16.3095 16.3074C17.2411 16.1048 18.0938 15.8375 18.8375 15.5159C19.2488 15.3381 19.634 15.1406 19.9844 14.9236C19.1265 17.2657 17.2675 19.1252 14.9258 19.9835C15.1426 19.6333 15.3399 19.2484 15.5176 18.8375C15.8394 18.0932 16.1069 17.2399 16.3095 16.3074ZM19.9838 9.07529C19.6336 8.85838 19.2485 8.66098 18.8375 8.48327C18.0938 8.16171 17.2411 7.89437 16.3095 7.69177C16.1069 6.75934 15.8394 5.90596 15.5176 5.16168C15.3402 4.75137 15.1431 4.36698 14.9267 4.01722C17.2675 4.87548 19.1258 6.7342 19.9838 9.07529ZM7.69311 7.69102C6.76016 7.89372 5.90632 8.16132 5.16168 8.48327C4.75248 8.66019 4.36906 8.85663 4.02005 9.0724C4.87844 6.73282 6.73604 4.87536 9.0757 4.01737C8.85927 4.3671 8.66228 4.75144 8.48491 5.16168C8.16319 5.90577 7.89575 6.75888 7.69311 7.69102Z"
+                  fill="#ffffff" />
+              </svg>
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+              تطوير حلول الويب المتقدمة
+            </h4>
+            <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              بناء تطبيقات ويب متكاملة (Full-Stack) وأنظمة إدارة مخصصة (مثل CRM و ERP). أركز على كتابة كود نظيف وقابل للتطوير (Scalable) ليتحمل نمو مشروعك المستقبلي، مع ضمان تجربة مستخدم سلسة وأداء عالي.
+            </p>
+            <!-- <a href="#contact"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+              معرفة المزيد
+            </a> -->
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="mb-12 wow fadeInUp group" data-wow-delay=".15s">
+            <div
+              class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
+              <span
+                class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0 0 0)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.373 10.471C9.43517 9.48416 8.72594 8.17465 9.19451 6.57159C9.60731 5.15903 10.9986 4.23447 12.4156 4.45187C13.1224 4.56017 13.744 4.85411 14.2284 5.41491C14.9616 6.2643 15.1272 7.25575 14.9034 8.35988L15.5728 8.54434C15.9165 8.63908 16.2474 8.73027 16.5768 8.82096C17.2896 6.83512 16.4534 4.51486 14.6278 3.32368C12.7268 2.0836 10.2638 2.34521 8.6493 3.96084C7.80641 4.80449 7.34519 5.83385 7.23791 7.02497C7.08622 8.71005 7.77185 10.0698 8.92375 11.2331L7.09224 14.3523C7.03239 14.3568 6.98082 14.36 6.93469 14.3628C6.85025 14.368 6.78409 14.372 6.71885 14.3815C5.5148 14.5548 4.66735 15.6421 4.86996 16.7512C5.09859 18.0043 6.22135 18.7734 7.37374 18.4668C8.59566 18.1417 9.24583 16.9441 8.78496 15.7134C8.61802 15.2679 8.72145 14.9824 8.93041 14.6319C9.51907 13.6443 10.0991 12.6512 10.6899 11.6397C10.9156 11.2531 11.1431 10.8637 11.373 10.471ZM15.52 11.9636C14.9302 10.9074 14.3351 9.84144 13.749 8.79131C13.7783 8.7167 13.8068 8.6465 13.8343 8.57906C13.8923 8.43623 13.9455 8.30563 13.9897 8.17226C14.2238 7.46806 14.0824 6.82541 13.6375 6.25442C13.0932 5.55555 12.1434 5.30173 11.334 5.61623C10.517 5.93356 9.99424 6.74816 10.0298 7.64931C10.0659 8.56049 10.6679 9.37379 11.6005 9.538C12.1589 9.6362 12.4324 9.90553 12.6802 10.3696C13.2069 11.3567 13.7527 12.3332 14.299 13.3105L14.2992 13.3109C14.515 13.6969 14.7308 14.0831 14.9457 14.4701C16.7748 13.2319 18.288 13.2713 19.4178 14.5612C20.3967 15.6789 20.4173 17.3813 19.466 18.523C18.3504 19.8613 16.8477 19.9145 15.1295 18.7844C14.6535 19.1888 14.208 19.5674 13.7647 19.9443C15.5042 21.7078 17.9872 21.9423 19.9506 20.5695C21.8634 19.2322 22.5292 16.665 21.5552 14.4973C20.7489 12.7029 18.5012 11.0269 15.52 11.9636ZM11.561 17.3759H15.1498C15.1999 17.4437 15.2466 17.5107 15.2923 17.5761C15.3876 17.7126 15.478 17.8421 15.5837 17.9571C16.3438 18.7826 17.6272 18.8235 18.4397 18.0574C19.2817 17.2635 19.3198 15.9298 18.5241 15.1009C17.7455 14.2898 16.4148 14.2123 15.6919 15.0711C15.2528 15.593 14.8028 15.6544 14.2199 15.6451C13.1545 15.6284 12.0886 15.6316 11.0229 15.6348C10.5954 15.6361 10.168 15.6373 9.74062 15.6373C9.83752 17.7701 9.04371 19.0991 7.46923 19.4146C5.92747 19.7236 4.50754 18.9246 4.00768 17.467C3.43984 15.8106 4.14208 14.4859 6.17102 13.4346C6.01835 12.8728 5.86401 12.3043 5.71137 11.7412C3.49998 12.2306 1.8409 14.4097 2.01215 16.8612C2.16348 19.0252 3.88223 20.947 5.98423 21.2913C7.12588 21.4785 8.19853 21.2841 9.19378 20.7107C10.474 19.973 11.217 18.8129 11.561 17.3759Z"
+                  fill="#ffffff" />
+              </svg>
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+              برمجة وربط الواجهات (API Integration)
+            </h4>
+            <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              بناء واجهات برمجية (APIs) آمنة وقابلة للتوسع باستخدام إطار عمل PHP Laravel. أضمن ربط نظامك بسلاسة مع خدمات الطرف الثالث الحيوية مثل بوابات الدفع الإلكتروني، WhatsApp API، وحلول التخزين السحابي.
+            </p>
+            <!-- <a href="#contact"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+              معرفة المزيد
+            </a> -->
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="mb-12 wow fadeInUp group" data-wow-delay=".2s">
+            <div
+              class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
+              <span
+                class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
+              <svg width="37" height="37" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0625 18.0453C9.01679 16.914 8.26885 15.8509 7.26013 14.8658C5.86655 13.5048 5 11.6029 5 9.49987C5 5.35781 8.35781 2 12.4999 2C16.6419 2 19.9997 5.35781 19.9997 9.49987C19.9997 11.6027 19.1333 13.5046 17.7399 14.8655C16.6988 15.8824 15.9355 16.9822 15.9355 18.1544V19.75C15.9355 20.9926 14.9282 22 13.6855 22H11.3125C10.0699 22 9.0625 20.9926 9.0625 19.75V18.0453ZM6.5 9.49987C6.5 6.18624 9.18624 3.5 12.4999 3.5C15.8135 3.5 18.4997 6.18624 18.4997 9.49987C18.4997 11.1824 17.8082 12.7021 16.6918 13.7925C15.9506 14.5164 15.1802 15.4257 14.7589 16.5H13.25V11.8412C13.5571 11.7329 13.8453 11.5559 14.0909 11.3103L14.9363 10.4649C15.2292 10.172 15.2292 9.69713 14.9363 9.40424C14.6434 9.11135 14.1686 9.11135 13.8757 9.40424L13.0303 10.2497C12.7374 10.5425 12.2625 10.5425 11.9696 10.2497L11.124 9.40421C10.8311 9.11133 10.3563 9.11136 10.0634 9.40427C9.77051 9.69719 9.77054 10.1721 10.0635 10.4649L10.909 11.3104C11.1547 11.556 11.4429 11.7329 11.75 11.8412L11.75 16.5H10.2412C9.81983 15.4258 9.04933 14.5165 8.30817 13.7927C7.19168 12.7023 6.5 11.1825 6.5 9.49987ZM10.5625 18.2129C10.564 18.1938 10.5647 18.1744 10.5647 18.1549C10.5647 18.1088 10.564 18.063 10.5625 18.0175V18H14.4355V19.75C14.4355 20.1642 14.0998 20.5 13.6855 20.5H11.3125C10.8983 20.5 10.5625 20.1642 10.5625 19.75V18.2129Z" fill="#ffffff"/>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+              الاستشارات والتخطيط التقني
+            </h4>
+            <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              هل تبدأ مشروعاً جديداً؟ أساعدك في اختيار التقنيات الأنسب (Tech Stack)، رسم هيكلية النظام (Architecture)، وتحليل المتطلبات لتجنب التكاليف الزائدة والأخطاء الشائعة، مما يضع مشروعك على طريق النجاح منذ اليوم الأول.
+            </p>
+            <!-- <a href="#contact"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+              معرفة المزيد
+            </a> -->
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="mb-12 wow fadeInUp group" data-wow-delay=".25s">
+            <div
+              class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary">
+              <span
+                class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"></span>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0 0 0)">
+                <path opacity="0.4"
+                  d="M7.49805 15.833V18.2489C7.49805 18.6631 7.16226 18.9989 6.74805 18.9989H6.25796C6.02989 18.6954 5.66689 18.4991 5.25805 18.4991H5.24805C4.55769 18.4991 3.99805 19.0588 3.99805 19.7491C3.99805 20.4395 4.55769 20.9991 5.24805 20.9991H5.25805C5.66711 20.9991 6.03028 20.8026 6.25832 20.4989H6.74805C7.99069 20.4989 8.99805 19.4915 8.99805 18.2489V15.833H7.49805ZM11.248 15.833V19.749C10.9444 19.9771 10.748 20.3402 10.748 20.7491C10.748 21.4395 11.3077 21.9991 11.998 21.9991H12.008C12.6984 21.9991 13.258 21.4395 13.258 20.7491C13.258 20.3357 13.0573 19.9691 12.748 19.7416V15.833H11.248ZM14.998 15.833V18.2489C14.998 19.4915 16.0054 20.4989 17.248 20.4989H17.738C17.966 20.8026 18.3292 20.9991 18.7383 20.9991H18.7483C19.4386 20.9991 19.9983 20.4395 19.9983 19.7491C19.9983 19.0588 19.4386 18.4991 18.7483 18.4991H18.7383C18.3294 18.4991 17.9664 18.6954 17.7384 18.9989H17.248C16.8338 18.9989 16.498 18.6631 16.498 18.2489V15.833H14.998Z"
+                  fill="#ffffff" />
+                <path
+                  d="M13.5784 3.61827C12.3561 2.30712 10.4745 1.68444 8.61288 2.15759C6.10638 2.79463 4.51439 5.19526 4.82582 7.69667C3.60618 8.48241 2.79688 9.85313 2.79688 11.414C2.79688 13.8546 4.77535 15.8331 7.21593 15.8331H7.49829H8.99829H11.2483H12.7483H14.9983H16.4983H16.7806C19.2212 15.8331 21.1997 13.8546 21.1997 11.414C21.1997 9.88466 20.4227 8.53784 19.2442 7.74502C19.5117 5.92951 18.4831 4.11402 16.6928 3.45537C15.6338 3.06578 14.5156 3.15767 13.5784 3.61827ZM7.21593 14.3331C5.60378 14.3331 4.29688 13.0262 4.29688 11.414C4.29688 10.2459 4.98306 9.23645 5.97763 8.7697C6.30019 8.61832 6.47171 8.2609 6.38801 7.91457C5.92891 6.01486 7.0829 4.09413 8.98236 3.61137C10.4633 3.23497 11.9653 3.84287 12.7935 5.02699C12.9097 5.19307 13.0881 5.30507 13.2882 5.33748C13.4882 5.36989 13.6929 5.31995 13.8556 5.19903C14.5014 4.7189 15.3662 4.56562 16.1748 4.86312C17.4081 5.31685 18.06 6.65513 17.6763 7.89564C17.5672 8.24848 17.7312 8.62826 18.0628 8.79076C19.0338 9.26645 19.6997 10.2632 19.6997 11.414C19.6997 13.0262 18.3928 14.3331 16.7806 14.3331H7.21593Z"
+                  fill="#ffffff" />
+              </svg>
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+              إدارة السحابة والاستضافة (Cloud & Hosting)
+            </h4>
+            <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+              إدارة شاملة للبنية التحتية الرقمية، تشمل حجز وإدارة النطاقات (Domains)، الاستضافات، السيرفرات، وإعداد البريد الإلكتروني للشركات. أتولّى كافة التفاصيل التقنية لضمان استقرار عملك وتشغيله بسلاسة دون انقطاع.
+            </p>
+            <!-- <a href="#contact"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+              معرقة المزيد
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Features Section End -->
+
+  <!-- ====== CTA Section Start -->
+  <section class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
+    <div class="container px-4 mx-auto">
+      <div class="relative overflow-hidden">
+        <div class="flex flex-wrap items-stretch -mx-4">
+          <div class="w-full px-4">
+            <div class="mx-auto max-w-[570px] text-center">
+              <h2 class="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                <span>هل أنت مستعد لتحويل فكرتك إلى واقع؟</span>
+                <span class="text-3xl font-normal md:text-[40px]">
+                  إستشر مجاناً.
+                </span>
+              </h2>
+              <p class="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
+                لا تترك أفكارك على الأوراق فقط. دعنا نناقش تفاصيل مشروعك ونرسم خارطة طريق تقنية لنجاحه، دون أي التزام مادي.
+              </p>
+              <a href="https://wa.me/+905378239405"
+                target="_blank"
+                class="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
+                احجز استشارة مجانية الآن
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="absolute top-0 left-0">
+        <svg width="495" height="470" viewBox="0 0 495 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="55" cy="442" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
+          <circle cx="446" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
+          <path d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z" stroke="white"
+            stroke-opacity="0.08" stroke-width="12" />
+        </svg>
+      </span>
+      <span class="absolute bottom-0 right-0">
+        <svg width="493" height="470" viewBox="0 0 493 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="462" cy="5" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
+          <circle cx="49" cy="470" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
+          <path d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z" stroke="white"
+            stroke-opacity="0.06" stroke-width="13" />
+        </svg>
+      </span>
+    </div>
+  </section>
+  <!-- ====== CTA Section End -->
+
+  <!-- ====== FAQ Section Start -->
+  <section id="faq" class="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[520px] text-center">
+            <span class="block mb-2 text-lg font-semibold text-primary">
+              الأسئلة الشائعة
+            </span>
+            <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              هل لديك أي سؤال؟
+            </h2>
+            <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
+              جمعت لك هنا إجابات لأكثر الأسئلة تكراراً حول خدماتي، التكلفة، وآلية العمل لنوفر الوقت ونبدأ بوضوح.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 lg:w-1/2">
+          <div class="mb-12 flex lg:mb-[70px]">
+            <div
+              class="ml-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+              <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                <path
+                  d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                <path
+                  d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                <path
+                  d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                هل تقدم دعماً فنياً بعد تسليم المشروع؟
+              </h3>
+              <p class="text-base text-body-color dark:text-dark-6">
+                بكل تأكيد. علاقتي بعملائي لا تنتهي عند التسليم. أقدم فترة دعم فني مجانية لضمان عمل النظام واستقراره، كما أوفر باقات صيانة شهرية وسنوية لإدارة السيرفرات والتحديثات المستمرة لضمان أمان موقعك.
+              </p>
+            </div>
+          </div>
+          <div class="mb-12 flex lg:mb-[70px]">
+            <div
+              class="ml-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+              <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                <path
+                  d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                <path
+                  d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                <path
+                  d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                ما هي التقنيات التي تستخدمها في التطوير؟
+              </h3>
+              <p class="text-base text-body-color dark:text-dark-6">
+                أعتمد بشكل أساسي على PHP Laravel لبناء أنظمة قوية وآمنة وقابلة للتوسع. كما أستخدم أحدث تقنيات الـ Front-end لضمان تجربة مستخدم عصرية. ومع ذلك، أنا أختار التقنية التي تخدم مصلحة المشروع أولاً.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <div class="mb-12 flex lg:mb-[70px]">
+            <div
+              class="ml-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+              <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                <path
+                  d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                <path
+                  d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                <path
+                  d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                ليس لدي خبرة في السيرفرات والاستضافة، هل تساعدني في ذلك؟
+              </h3>
+              <p class="text-base text-body-color dark:text-dark-6">
+                نعم، هذه إحدى خدماتي الأساسية. أتولى إدارة البنية التحتية بالكامل، من حجز النطاق (Domain) وإعداد السيرفرات (Hosting) إلى ضبط إعدادات الأمان، لتتفرغ أنت لإدارة أعمالك فقط.
+              </p>
+            </div>
+          </div>
+          <div class="mb-12 flex lg:mb-[70px]">
+            <div
+              class="ml-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+              <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                <path
+                  d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                <path
+                  d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                <path
+                  d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                كم تبلغ تكلفة إنشاء موقع أو تطبيق؟
+              </h3>
+              <p class="text-base text-body-color dark:text-dark-6">
+                لا يوجد سعر ثابت لجميع المشاريع، فالتكلفة تعتمد كلياً على حجم المتطلبات والميزات التقنية التي يحتاجها مشروعك. أدعوك لحجز استشارة مجانية لنناقش تفاصيل فكرتك، وسأقوم بعدها بتقديم عرض سعر دقيق ومفصل.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="absolute left-4 top-4 -z-1">
+        <svg width="48" height="134" viewBox="0 0 48 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)" fill="#13C296" />
+          <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)" fill="#13C296" />
+          <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)" fill="#13C296" />
+          <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)" fill="#13C296" />
+          <circle cx="45.6673" cy="73.3335" r="1.66667" transform="rotate(180 45.6673 73.3335)" fill="#13C296" />
+          <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)" fill="#13C296" />
+          <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)" fill="#13C296" />
+          <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)" fill="#13C296" />
+          <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)" fill="#13C296" />
+          <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)" fill="#13C296" />
+          <circle cx="31.0013" cy="132" r="1.66667" transform="rotate(180 31.0013 132)" fill="#13C296" />
+          <circle cx="31.0013" cy="117.333" r="1.66667" transform="rotate(180 31.0013 117.333)" fill="#13C296" />
+          <circle cx="31.0013" cy="102.667" r="1.66667" transform="rotate(180 31.0013 102.667)" fill="#13C296" />
+          <circle cx="31.0013" cy="88.0001" r="1.66667" transform="rotate(180 31.0013 88.0001)" fill="#13C296" />
+          <circle cx="31.0013" cy="73.3335" r="1.66667" transform="rotate(180 31.0013 73.3335)" fill="#13C296" />
+          <circle cx="31.0013" cy="45.0001" r="1.66667" transform="rotate(180 31.0013 45.0001)" fill="#13C296" />
+          <circle cx="31.0013" cy="16.0001" r="1.66667" transform="rotate(180 31.0013 16.0001)" fill="#13C296" />
+          <circle cx="31.0013" cy="59.0001" r="1.66667" transform="rotate(180 31.0013 59.0001)" fill="#13C296" />
+          <circle cx="31.0013" cy="30.6668" r="1.66667" transform="rotate(180 31.0013 30.6668)" fill="#13C296" />
+          <circle cx="31.0013" cy="1.66683" r="1.66667" transform="rotate(180 31.0013 1.66683)" fill="#13C296" />
+          <circle cx="16.3333" cy="132" r="1.66667" transform="rotate(180 16.3333 132)" fill="#13C296" />
+          <circle cx="16.3333" cy="117.333" r="1.66667" transform="rotate(180 16.3333 117.333)" fill="#13C296" />
+          <circle cx="16.3333" cy="102.667" r="1.66667" transform="rotate(180 16.3333 102.667)" fill="#13C296" />
+          <circle cx="16.3333" cy="88.0001" r="1.66667" transform="rotate(180 16.3333 88.0001)" fill="#13C296" />
+          <circle cx="16.3333" cy="73.3335" r="1.66667" transform="rotate(180 16.3333 73.3335)" fill="#13C296" />
+          <circle cx="16.3333" cy="45.0001" r="1.66667" transform="rotate(180 16.3333 45.0001)" fill="#13C296" />
+          <circle cx="16.3333" cy="16.0001" r="1.66667" transform="rotate(180 16.3333 16.0001)" fill="#13C296" />
+          <circle cx="16.3333" cy="59.0001" r="1.66667" transform="rotate(180 16.3333 59.0001)" fill="#13C296" />
+          <circle cx="16.3333" cy="30.6668" r="1.66667" transform="rotate(180 16.3333 30.6668)" fill="#13C296" />
+          <circle cx="16.3333" cy="1.66683" r="1.66667" transform="rotate(180 16.3333 1.66683)" fill="#13C296" />
+          <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)" fill="#13C296" />
+          <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)" fill="#13C296" />
+          <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)" fill="#13C296" />
+          <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)" fill="#13C296" />
+          <circle cx="1.66732" cy="73.3335" r="1.66667" transform="rotate(180 1.66732 73.3335)" fill="#13C296" />
+          <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)" fill="#13C296" />
+          <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)" fill="#13C296" />
+          <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)" fill="#13C296" />
+          <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)" fill="#13C296" />
+          <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)" fill="#13C296" />
+        </svg>
+      </span>
+      <span class="absolute bottom-4 right-4 -z-1">
+        <svg width="48" height="134" viewBox="0 0 48 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)" fill="#3758F9" />
+          <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)" fill="#3758F9" />
+          <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)" fill="#3758F9" />
+          <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)" fill="#3758F9" />
+          <circle cx="45.6673" cy="73.3333" r="1.66667" transform="rotate(180 45.6673 73.3333)" fill="#3758F9" />
+          <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)" fill="#3758F9" />
+          <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)" fill="#3758F9" />
+          <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)" fill="#3758F9" />
+          <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)" fill="#3758F9" />
+          <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)" fill="#3758F9" />
+          <circle cx="31.0006" cy="132" r="1.66667" transform="rotate(180 31.0006 132)" fill="#3758F9" />
+          <circle cx="31.0006" cy="117.333" r="1.66667" transform="rotate(180 31.0006 117.333)" fill="#3758F9" />
+          <circle cx="31.0006" cy="102.667" r="1.66667" transform="rotate(180 31.0006 102.667)" fill="#3758F9" />
+          <circle cx="31.0006" cy="88.0001" r="1.66667" transform="rotate(180 31.0006 88.0001)" fill="#3758F9" />
+          <circle cx="31.0008" cy="73.3333" r="1.66667" transform="rotate(180 31.0008 73.3333)" fill="#3758F9" />
+          <circle cx="31.0008" cy="45.0001" r="1.66667" transform="rotate(180 31.0008 45.0001)" fill="#3758F9" />
+          <circle cx="31.0008" cy="16.0001" r="1.66667" transform="rotate(180 31.0008 16.0001)" fill="#3758F9" />
+          <circle cx="31.0008" cy="59.0001" r="1.66667" transform="rotate(180 31.0008 59.0001)" fill="#3758F9" />
+          <circle cx="31.0008" cy="30.6668" r="1.66667" transform="rotate(180 31.0008 30.6668)" fill="#3758F9" />
+          <circle cx="31.0008" cy="1.66683" r="1.66667" transform="rotate(180 31.0008 1.66683)" fill="#3758F9" />
+          <circle cx="16.3341" cy="132" r="1.66667" transform="rotate(180 16.3341 132)" fill="#3758F9" />
+          <circle cx="16.3341" cy="117.333" r="1.66667" transform="rotate(180 16.3341 117.333)" fill="#3758F9" />
+          <circle cx="16.3341" cy="102.667" r="1.66667" transform="rotate(180 16.3341 102.667)" fill="#3758F9" />
+          <circle cx="16.3341" cy="88.0001" r="1.66667" transform="rotate(180 16.3341 88.0001)" fill="#3758F9" />
+          <circle cx="16.3338" cy="73.3333" r="1.66667" transform="rotate(180 16.3338 73.3333)" fill="#3758F9" />
+          <circle cx="16.3338" cy="45.0001" r="1.66667" transform="rotate(180 16.3338 45.0001)" fill="#3758F9" />
+          <circle cx="16.3338" cy="16.0001" r="1.66667" transform="rotate(180 16.3338 16.0001)" fill="#3758F9" />
+          <circle cx="16.3338" cy="59.0001" r="1.66667" transform="rotate(180 16.3338 59.0001)" fill="#3758F9" />
+          <circle cx="16.3338" cy="30.6668" r="1.66667" transform="rotate(180 16.3338 30.6668)" fill="#3758F9" />
+          <circle cx="16.3338" cy="1.66683" r="1.66667" transform="rotate(180 16.3338 1.66683)" fill="#3758F9" />
+          <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)" fill="#3758F9" />
+          <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)" fill="#3758F9" />
+          <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)" fill="#3758F9" />
+          <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)" fill="#3758F9" />
+          <circle cx="1.66732" cy="73.3333" r="1.66667" transform="rotate(180 1.66732 73.3333)" fill="#3758F9" />
+          <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)" fill="#3758F9" />
+          <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)" fill="#3758F9" />
+          <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)" fill="#3758F9" />
+          <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)" fill="#3758F9" />
+          <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)" fill="#3758F9" />
+        </svg>
+      </span>
+    </div>
+  </section>
+  <!-- ====== FAQ Section End -->
+
+  <!-- ====== Project Section Start -->
+  <section id="project" class="bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap justify-center -mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+            <span class="block mb-2 text-lg font-semibold text-primary">
+              أعمالي
+            </span>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+              إنجازات تتحدث عن نفسها
+            </h2>
+            <p class="text-base text-body-color dark:text-dark-6">
+              نماذج حقيقية لمشاريع تم تحويلها من مجرد أفكار إلى أنظمة ومنصات تعمل بكفاءة على أرض الواقع.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/Serva2z.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                CRM System
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  نظام Serva2z: حل شامل لإدارة العقارات والمحاسبة
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                نظام CRM ومحاسبة متكامل تم تطويره خصيصاً لقطاع العقارات. يتيح إدارة شاملة للعملاء والمحافظ المالية بثلاث عملات مختلفة، مع تتبع دقيق للحوالات. يتميز النظام بربط برمجي مع Google Drive API لأرشفة العقود سحابياً، بالإضافة إلى أدوات لتنظيم اجتماعات الموظفين ورفع كفاءة العمل الداخلي.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".15s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/PKHUB CRM.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                CRM System
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  منصة PKHub: نظام إدارة الطلاب والقبولات الجامعية
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                نظام CRM متخصص لقطاع الاستشارات التعليمية والدراسة في الخارج. يقوم بإدارة دورة حياة الطالب الدولي بالكامل، بدءاً من تقديم الطلبات ومتابعة إجراءات التسجيل في الجامعات العالمية، وصولاً إلى تتبع الأقساط والدفعات المالية، مما يسهل إدارة ألآف الملفات الأكاديمية بدقة عالية.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".2s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/mshegypt website.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                Website
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  واجهة تسويقية لشركة عقارات
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                موقع إلكتروني تعريفي صُمم لعرض المشاريع العقارية بأسلوب بصري جذاب ومنظم. يتيح للزوار استعراض تفاصيل وصور كل مشروع بدقة، مع دمج نماذج تواصل (Contact Forms) فعالة واستراتيجية لتسهيل وصول العملاء المحتملين للشركة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/PKHUB Website.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                Website
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  بوابة PKHub: محرك بحث ذكي للجامعات والتخصصات
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                منصة تفاعلية للطلاب الدوليين تتيح استكشاف الجامعات والتخصصات المتاحة حول العالم. يتميز الموقع بنظام بحث وفلترة متقدم وسريع يساعد الطالب في العثور على تخصصه المثالي بسهولة، مع واجهة مستخدم سلسة ونماذج تواصل مباشرة لتحويل الزوار إلى عملاء فعليين.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".15s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/mshegypt CRM.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                CRM System
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  نظام CRM لإدارة المبيعات والصفقات العقارية
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                نظام إدارة داخلي لشركة Egypt My Second Home، صُمم خصيصاً لتنظيم دورة حياة المبيعات. يتيح للفريق تتبع صفقات البيع (Deals) بمراحلها المختلفة، وإدارة سجلات العملاء بدقة، مما يسهل متابعة الفرص البيعية ويزيد من كفاءة فريق المبيعات.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="mb-10 wow fadeInUp group" data-wow-delay=".2s">
+            <div class="mb-8 overflow-hidden rounded-[5px]">
+              <a href="javascript:void(0)" class="block">
+                <img src="./assets/images/project/next move website.png" alt="image"
+                  class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+              </a>
+            </div>
+            <div>
+              <span
+                class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                Website
+              </span>
+              <h3>
+                <a href="javascript:void(0)"
+                  class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
+                  مجموعة Next Move: واجهة رقمية لشركة رائدة
+                </a>
+              </h3>
+              <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                الموقع الرسمي لمجموعة استثمارية كبرى في تركيا تضم تحت مظلتها عدة شركات في قطاعي العقارات والتعليم. تم تطوير الموقع ليعكس الثقل التجاري للشركة، مستعرضاً الشركات التابعة لها وتنوع خدماتها بأسلوب مؤسسي فخم واحترافي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Project Section End -->
+
+  <!-- ====== Contact Start ====== -->
+  <section id="contact" class="relative py-20 md:py-[120px]">
+    <div class="absolute top-0 left-0 w-full h-full -z-1 dark:bg-dark"></div>
+    <div class="absolute left-0 top-0 -z-1 h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2"></div>
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
+          <div class="ud-contact-content-wrapper">
+            <div class="ud-contact-title mb-12 lg:mb-[150px]">
+              <span class="block mb-6 text-base font-medium text-dark dark:text-white">
+                لنبدأ العمل معاً
+              </span>
+              <h2 class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                هل لديك مشروع في ذهنك؟ أو مجرد فكرة تود مناقشتها؟ أنا متاح دائمًا للحديث عن كيف يمكنني مساعدتك في تحقيق أهدافك. لا تتردد في مراسلتي.
+              </h2>
+            </div>
+            <div class="flex flex-wrap justify-between mb-12 lg:mb-0">
+              <div class="mb-8 flex w-[330px] max-w-full">
+                <div class="ml-6 text-[32px] text-primary">
+                  <svg width="29" height="35" viewBox="0 0 29 35" class="fill-current">
+                    <path
+                      d="M14.5 0.710938C6.89844 0.710938 0.664062 6.72656 0.664062 14.0547C0.664062 19.9062 9.03125 29.5859 12.6406 33.5234C13.1328 34.0703 13.7891 34.3437 14.5 34.3437C15.2109 34.3437 15.8672 34.0703 16.3594 33.5234C19.9688 29.6406 28.3359 19.9062 28.3359 14.0547C28.3359 6.67188 22.1016 0.710938 14.5 0.710938ZM14.9375 32.2109C14.6641 32.4844 14.2812 32.4844 14.0625 32.2109C11.3828 29.3125 2.57812 19.3594 2.57812 14.0547C2.57812 7.71094 7.9375 2.625 14.5 2.625C21.0625 2.625 26.4219 7.76562 26.4219 14.0547C26.4219 19.3594 17.6172 29.2578 14.9375 32.2109Z" />
+                    <path
+                      d="M14.5 8.58594C11.2734 8.58594 8.59375 11.2109 8.59375 14.4922C8.59375 17.7188 11.2187 20.3984 14.5 20.3984C17.7812 20.3984 20.4062 17.7734 20.4062 14.4922C20.4062 11.2109 17.7266 8.58594 14.5 8.58594ZM14.5 18.4297C12.3125 18.4297 10.5078 16.625 10.5078 14.4375C10.5078 12.25 12.3125 10.4453 14.5 10.4453C16.6875 10.4453 18.4922 12.25 18.4922 14.4375C18.4922 16.625 16.6875 18.4297 14.5 18.4297Z" />
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                    أقيم في
+                  </h5>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    تركيا
+                  </p>
+                </div>
+              </div>
+              <div class="mb-8 flex w-[330px] max-w-full">
+                <div class="ml-6 text-[32px] text-primary">
+                  <svg width="34" height="25" viewBox="0 0 34 25" class="fill-current">
+                    <path
+                      d="M30.5156 0.960938H3.17188C1.42188 0.960938 0 2.38281 0 4.13281V20.9219C0 22.6719 1.42188 24.0938 3.17188 24.0938H30.5156C32.2656 24.0938 33.6875 22.6719 33.6875 20.9219V4.13281C33.6875 2.38281 32.2656 0.960938 30.5156 0.960938ZM30.5156 2.875C30.7891 2.875 31.0078 2.92969 31.2266 3.09375L17.6094 11.3516C17.1172 11.625 16.5703 11.625 16.0781 11.3516L2.46094 3.09375C2.67969 2.98438 2.89844 2.875 3.17188 2.875H30.5156ZM30.5156 22.125H3.17188C2.51562 22.125 1.91406 21.5781 1.91406 20.8672V5.00781L15.0391 12.9922C15.5859 13.3203 16.1875 13.4844 16.7891 13.4844C17.3906 13.4844 17.9922 13.3203 18.5391 12.9922L31.6641 5.00781V20.8672C31.7734 21.5781 31.1719 22.125 30.5156 22.125Z" />
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                    كيف يمكنني مساعتدك؟
+                  </h5>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    mohamadsytr99@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
+          <div
+            class="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-dark-2 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+            data-wow-delay=".2s
+              ">
+            <h3 class="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
+              أرسل لي رسالة
+            </h3>
+            <form action="https://formsubmit.co/mohamadsytr99@gmail.com" method="POST">
+              <input type="hidden" name="_next" value="http://127.0.0.1:8000/">
+              <input type="hidden" name="_cc" value="mohamadsytr99@gmail.com">
+              <input type="hidden" name="_subject" value="Contact us Form">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <div class="mb-[22px]">
+                <label for="fullName" class="block mb-4 text-sm text-body-color dark:text-dark-6">الاسم الكامل*</label>
+                <input required type="text" name="fullName" placeholder="عبدالله منعم"
+                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6" />
+              </div>
+              <div class="mb-[22px]">
+                <label for="email" class="block mb-4 text-sm text-body-color dark:text-dark-6">الايميل*</label>
+                <input required type="email" name="email" placeholder="example@yourmail.com"
+                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6" />
+              </div>
+              <div class="mb-[22px]">
+                <label for="phone" class="block mb-4 text-sm text-body-color dark:text-dark-6">رقم الهاتف*</label>
+                <input required type="text" name="phone" placeholder="+90 537 823 94 05"
+                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6" />
+              </div>
+              <div class="mb-[30px]">
+                <label for="message" class="block mb-4 text-sm text-body-color dark:text-dark-6">الرسالة*</label>
+                <textarea name="message" rows="1" placeholder="اكتب رسالتك هنا"
+                  class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6"></textarea>
+              </div>
+              <div class="mb-0">
+                <button type="submit"
+                  class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out rounded-md bg-primary hover:bg-blue-dark">
+                  إرسال
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Contact End ====== -->
+
+  <!-- ====== Brands Section Start -->
+  <section id="brands" class="pb-20 dark:bg-dark">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[520px] text-center">
+            <span class="block mb-2 text-lg font-semibold text-primary">
+              عملائي
+            </span>
+            <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              عملاء سعدت بالعمل معهم
+            </h2>
+            <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
+              أفتخر بشراكتي مع الشركات الناشئة، المؤسسات، والأفراد الذين وثقوا بي لتحويل أفكارهم الرقمية إلى واقع ملموس.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-8 -mx-4 xl:gap-11">
+        <a href="https://serva2z.com/" target="_blank">
+          <img src="./assets/images/brands/serva2z.png" alt="serva2z" class="dark:hidden w-48" />
+          <img src="./assets/images/brands/serva2z-white.png" alt="serva2z" class="hidden dark:block w-48" />
+        </a>
+        <a href="https://pkhub.info/" target="_blank">
+          <img src="./assets/images/brands/pkhub.svg" alt="pkhub" class="dark:hidden w-48" />
+          <img src="./assets/images/brands/pkhub-white.svg" alt="" class="hidden dark:block w-48" />
+        </a>
+        <a href="https://mshegypt.com/" target="_blank">
+          <img src="./assets/images/brands/mshegypt.jpg" alt="mshegypt" class="dark:hidden" />
+          <img src="./assets/images/brands/mshegypt-white.png" alt="mshegypt" class="hidden dark:block" />
+        </a>
+        <a href="https://properties-gate.com/" target="_blank">
+          <img src="./assets/images/brands/properties-gate.png" alt="properties-gate" class="dark:hidden" />
+          <img src="./assets/images/brands/properties-gate-white.png" alt="graygrids" class="hidden dark:block" />
+        </a>
+        <a href="https://next-move.info/" target="_blank">
+          <img src="./assets/images/brands/next-move.webp" alt="next-move" class="dark:hidden" />
+          <img src="./assets/images/brands/next-move-white.webp" alt="graygrids" class="hidden dark:block" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Brands Section End -->
+
+  <!-- ====== Footer Section Start -->
+  <footer class="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]" data-wow-delay=".15s">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+          <div class="w-full mb-10">
+            <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
+              <img src="assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
+            </a>
+            <p class="mb-8 max-w-[270px] text-base text-gray-7 italic">
+              "البرمجة ليست مجرد كتابة أكواد، بل هي فن إيجاد الحلول."
+            </p>
+            <div class="flex items-center -mx-3">
+              <a target="_blank" href="https://x.com/Jolak227" class="px-3 text-gray-7 hover:text-white">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+                  <path d="M17.7512 2.96094H20.818L14.1179 10.6187L22 21.0391H15.8284L10.9946 14.7191L5.4636 21.0391H2.39492L9.56132 12.8483L2 2.96094H8.32824L12.6976 8.73762L17.7512 2.96094ZM16.6748 19.2035H18.3742L7.40492 4.70014H5.58132L16.6748 19.2035Z" fill="#ffffff"/>
+                </svg>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/jolak_227/" class="px-3 text-gray-7 hover:text-white">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current">
+                  <path
+                    d="M11.0297 14.4305C12.9241 14.4305 14.4598 12.8948 14.4598 11.0004C14.4598 9.10602 12.9241 7.57031 11.0297 7.57031C9.13529 7.57031 7.59958 9.10602 7.59958 11.0004C7.59958 12.8948 9.13529 14.4305 11.0297 14.4305Z" />
+                  <path
+                    d="M14.7554 1.8335H7.24463C4.25807 1.8335 1.83334 4.25823 1.83334 7.24479V14.6964C1.83334 17.7421 4.25807 20.1668 7.24463 20.1668H14.6962C17.7419 20.1668 20.1667 17.7421 20.1667 14.7555V7.24479C20.1667 4.25823 17.7419 1.8335 14.7554 1.8335ZM11.0296 15.4948C8.51614 15.4948 6.53496 13.4545 6.53496 11.0002C6.53496 8.54586 8.54571 6.50554 11.0296 6.50554C13.4839 6.50554 15.4946 8.54586 15.4946 11.0002C15.4946 13.4545 13.5134 15.4948 11.0296 15.4948ZM17.2393 6.91952C16.9436 7.24479 16.5 7.42221 15.9973 7.42221C15.5538 7.42221 15.1102 7.24479 14.7554 6.91952C14.4301 6.59425 14.2527 6.18027 14.2527 5.67758C14.2527 5.17489 14.4301 4.79049 14.7554 4.43565C15.0807 4.08081 15.4946 3.90339 15.9973 3.90339C16.4409 3.90339 16.914 4.08081 17.2393 4.40608C17.535 4.79049 17.7419 5.23403 17.7419 5.70715C17.7124 6.18027 17.535 6.59425 17.2393 6.91952Z" />
+                  <path
+                    d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z" />
+                </svg>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/muhammed-colak/" class="px-3 text-gray-7 hover:text-white">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current">
+                  <path
+                    d="M18.8065 1.8335H3.16399C2.42474 1.8335 1.83334 2.42489 1.83334 3.16414V18.8362C1.83334 19.5459 2.42474 20.1668 3.16399 20.1668H18.7473C19.4866 20.1668 20.078 19.5754 20.078 18.8362V3.13457C20.1371 2.42489 19.5457 1.8335 18.8065 1.8335ZM7.24464 17.4168H4.55379V8.69371H7.24464V17.4168ZM5.88443 7.48135C4.99733 7.48135 4.31721 6.77167 4.31721 5.91414C4.31721 5.05661 5.0269 4.34694 5.88443 4.34694C6.74196 4.34694 7.45163 5.05661 7.45163 5.91414C7.45163 6.77167 6.8011 7.48135 5.88443 7.48135ZM17.4463 17.4168H14.7554V13.1883C14.7554 12.183 14.7258 10.8523 13.336 10.8523C11.9167 10.8523 11.7097 11.976 11.7097 13.0996V17.4168H9.01884V8.69371H11.6506V9.90608H11.6801C12.0645 9.1964 12.9221 8.48672 14.2527 8.48672C17.0027 8.48672 17.5054 10.2609 17.5054 12.6856V17.4168H17.4463Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-[#8890A4]/40 py-8 lg:mt-[60px]">
+      <div class="container px-4 mx-auto">
+        <div class="w-full px-4">
+          <div class="flex justify-center my-1">
+            <p class="text-base text-gray-7">
+              © 2025 Muhammed Jolak — All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span class="absolute left-0 top-0 z-[-1]">
+        <img src="assets/images/footer/shape-1.svg" alt="" />
+      </span>
+
+      <span class="absolute bottom-0 right-0 z-[-1]">
+        <img src="assets/images/footer/shape-3.svg" alt="" />
+      </span>
+
+      <span class="absolute right-0 top-0 z-[-1]">
+        <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.8667 33.1956C2.89765 33.1956 3.7334 34.0318 3.7334 35.0633C3.7334 36.0947 2.89765 36.9309 1.8667 36.9309C0.835744 36.9309 4.50645e-08 36.0947 0 35.0633C-4.50645e-08 34.0318 0.835744 33.1956 1.8667 33.1956Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 33.1956C19.3249 33.1956 20.1606 34.0318 20.1606 35.0633C20.1606 36.0947 19.3249 36.9309 18.2939 36.9309C17.263 36.9309 16.4272 36.0947 16.4272 35.0633C16.4272 34.0318 17.263 33.1956 18.2939 33.1956Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 33.195C35.7519 33.195 36.5876 34.0311 36.5876 35.0626C36.5876 36.0941 35.7519 36.9303 34.7209 36.9303C33.69 36.9303 32.8542 36.0941 32.8542 35.0626C32.8542 34.0311 33.69 33.195 34.7209 33.195Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 33.195C51.965 33.195 52.8008 34.0311 52.8008 35.0626C52.8008 36.0941 51.965 36.9303 50.9341 36.9303C49.9031 36.9303 49.0674 36.0941 49.0674 35.0626C49.0674 34.0311 49.9031 33.195 50.9341 33.195Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 16.7605C2.89765 16.7605 3.7334 17.5966 3.7334 18.6281C3.7334 19.6596 2.89765 20.4957 1.8667 20.4957C0.835744 20.4957 4.50645e-08 19.6596 0 18.6281C-4.50645e-08 17.5966 0.835744 16.7605 1.8667 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 16.7605C19.3249 16.7605 20.1606 17.5966 20.1606 18.6281C20.1606 19.6596 19.3249 20.4957 18.2939 20.4957C17.263 20.4957 16.4272 19.6596 16.4272 18.6281C16.4272 17.5966 17.263 16.7605 18.2939 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 16.7605C35.7519 16.7605 36.5876 17.5966 36.5876 18.6281C36.5876 19.6596 35.7519 20.4957 34.7209 20.4957C33.69 20.4957 32.8542 19.6596 32.8542 18.6281C32.8542 17.5966 33.69 16.7605 34.7209 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 16.7605C51.965 16.7605 52.8008 17.5966 52.8008 18.6281C52.8008 19.6596 51.965 20.4957 50.9341 20.4957C49.9031 20.4957 49.0674 19.6596 49.0674 18.6281C49.0674 17.5966 49.9031 16.7605 50.9341 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 0.324951C2.89765 0.324951 3.7334 1.16115 3.7334 2.19261C3.7334 3.22408 2.89765 4.06024 1.8667 4.06024C0.835744 4.06024 4.50645e-08 3.22408 0 2.19261C-4.50645e-08 1.16115 0.835744 0.324951 1.8667 0.324951Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 0.324951C19.3249 0.324951 20.1606 1.16115 20.1606 2.19261C20.1606 3.22408 19.3249 4.06024 18.2939 4.06024C17.263 4.06024 16.4272 3.22408 16.4272 2.19261C16.4272 1.16115 17.263 0.324951 18.2939 0.324951Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 0.325302C35.7519 0.325302 36.5876 1.16147 36.5876 2.19293C36.5876 3.2244 35.7519 4.06056 34.7209 4.06056C33.69 4.06056 32.8542 3.2244 32.8542 2.19293C32.8542 1.16147 33.69 0.325302 34.7209 0.325302Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 0.325302C51.965 0.325302 52.8008 1.16147 52.8008 2.19293C52.8008 3.2244 51.965 4.06056 50.9341 4.06056C49.9031 4.06056 49.0674 3.2244 49.0674 2.19293C49.0674 1.16147 49.9031 0.325302 50.9341 0.325302Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 33.1956C67.9346 33.1956 68.7704 34.0318 68.7704 35.0633C68.7704 36.0947 67.9346 36.9309 66.9037 36.9309C65.8727 36.9309 65.037 36.0947 65.037 35.0633C65.037 34.0318 65.8727 33.1956 66.9037 33.1956Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 33.1956C84.3616 33.1956 85.1974 34.0318 85.1974 35.0633C85.1974 36.0947 84.3616 36.9309 83.3307 36.9309C82.2997 36.9309 81.464 36.0947 81.464 35.0633C81.464 34.0318 82.2997 33.1956 83.3307 33.1956Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 33.1956C100.789 33.1956 101.624 34.0318 101.624 35.0633C101.624 36.0947 100.789 36.9309 99.7576 36.9309C98.7266 36.9309 97.8909 36.0947 97.8909 35.0633C97.8909 34.0318 98.7266 33.1956 99.7576 33.1956Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 16.7605C67.9346 16.7605 68.7704 17.5966 68.7704 18.6281C68.7704 19.6596 67.9346 20.4957 66.9037 20.4957C65.8727 20.4957 65.037 19.6596 65.037 18.6281C65.037 17.5966 65.8727 16.7605 66.9037 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 16.7605C84.3616 16.7605 85.1974 17.5966 85.1974 18.6281C85.1974 19.6596 84.3616 20.4957 83.3307 20.4957C82.2997 20.4957 81.464 19.6596 81.464 18.6281C81.464 17.5966 82.2997 16.7605 83.3307 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 16.7605C100.789 16.7605 101.624 17.5966 101.624 18.6281C101.624 19.6596 100.789 20.4957 99.7576 20.4957C98.7266 20.4957 97.8909 19.6596 97.8909 18.6281C97.8909 17.5966 98.7266 16.7605 99.7576 16.7605Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 0.324966C67.9346 0.324966 68.7704 1.16115 68.7704 2.19261C68.7704 3.22408 67.9346 4.06024 66.9037 4.06024C65.8727 4.06024 65.037 3.22408 65.037 2.19261C65.037 1.16115 65.8727 0.324966 66.9037 0.324966Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 0.324951C84.3616 0.324951 85.1974 1.16115 85.1974 2.19261C85.1974 3.22408 84.3616 4.06024 83.3307 4.06024C82.2997 4.06024 81.464 3.22408 81.464 2.19261C81.464 1.16115 82.2997 0.324951 83.3307 0.324951Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 0.324951C100.789 0.324951 101.624 1.16115 101.624 2.19261C101.624 3.22408 100.789 4.06024 99.7576 4.06024C98.7266 4.06024 97.8909 3.22408 97.8909 2.19261C97.8909 1.16115 98.7266 0.324951 99.7576 0.324951Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 82.2029C2.89765 82.2029 3.7334 83.039 3.7334 84.0705C3.7334 85.102 2.89765 85.9382 1.8667 85.9382C0.835744 85.9382 4.50645e-08 85.102 0 84.0705C-4.50645e-08 83.039 0.835744 82.2029 1.8667 82.2029Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 82.2029C19.3249 82.2029 20.1606 83.039 20.1606 84.0705C20.1606 85.102 19.3249 85.9382 18.2939 85.9382C17.263 85.9382 16.4272 85.102 16.4272 84.0705C16.4272 83.039 17.263 82.2029 18.2939 82.2029Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 82.2026C35.7519 82.2026 36.5876 83.0387 36.5876 84.0702C36.5876 85.1017 35.7519 85.9378 34.7209 85.9378C33.69 85.9378 32.8542 85.1017 32.8542 84.0702C32.8542 83.0387 33.69 82.2026 34.7209 82.2026Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 82.2026C51.965 82.2026 52.8008 83.0387 52.8008 84.0702C52.8008 85.1017 51.965 85.9378 50.9341 85.9378C49.9031 85.9378 49.0674 85.1017 49.0674 84.0702C49.0674 83.0387 49.9031 82.2026 50.9341 82.2026Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 65.7677C2.89765 65.7677 3.7334 66.6039 3.7334 67.6353C3.7334 68.6668 2.89765 69.503 1.8667 69.503C0.835744 69.503 4.50645e-08 68.6668 0 67.6353C-4.50645e-08 66.6039 0.835744 65.7677 1.8667 65.7677Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 65.7677C19.3249 65.7677 20.1606 66.6039 20.1606 67.6353C20.1606 68.6668 19.3249 69.503 18.2939 69.503C17.263 69.503 16.4272 68.6668 16.4272 67.6353C16.4272 66.6039 17.263 65.7677 18.2939 65.7677Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 65.7674C35.7519 65.7674 36.5876 66.6036 36.5876 67.635C36.5876 68.6665 35.7519 69.5027 34.7209 69.5027C33.69 69.5027 32.8542 68.6665 32.8542 67.635C32.8542 66.6036 33.69 65.7674 34.7209 65.7674Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 65.7674C51.965 65.7674 52.8008 66.6036 52.8008 67.635C52.8008 68.6665 51.965 69.5027 50.9341 69.5027C49.9031 69.5027 49.0674 68.6665 49.0674 67.635C49.0674 66.6036 49.9031 65.7674 50.9341 65.7674Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 98.2644C2.89765 98.2644 3.7334 99.1005 3.7334 100.132C3.7334 101.163 2.89765 102 1.8667 102C0.835744 102 4.50645e-08 101.163 0 100.132C-4.50645e-08 99.1005 0.835744 98.2644 1.8667 98.2644Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M1.8667 49.3322C2.89765 49.3322 3.7334 50.1684 3.7334 51.1998C3.7334 52.2313 2.89765 53.0675 1.8667 53.0675C0.835744 53.0675 4.50645e-08 52.2313 0 51.1998C-4.50645e-08 50.1684 0.835744 49.3322 1.8667 49.3322Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 98.2644C19.3249 98.2644 20.1606 99.1005 20.1606 100.132C20.1606 101.163 19.3249 102 18.2939 102C17.263 102 16.4272 101.163 16.4272 100.132C16.4272 99.1005 17.263 98.2644 18.2939 98.2644Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M18.2939 49.3322C19.3249 49.3322 20.1606 50.1684 20.1606 51.1998C20.1606 52.2313 19.3249 53.0675 18.2939 53.0675C17.263 53.0675 16.4272 52.2313 16.4272 51.1998C16.4272 50.1684 17.263 49.3322 18.2939 49.3322Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 98.2647C35.7519 98.2647 36.5876 99.1008 36.5876 100.132C36.5876 101.164 35.7519 102 34.7209 102C33.69 102 32.8542 101.164 32.8542 100.132C32.8542 99.1008 33.69 98.2647 34.7209 98.2647Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 98.2647C51.965 98.2647 52.8008 99.1008 52.8008 100.132C52.8008 101.164 51.965 102 50.9341 102C49.9031 102 49.0674 101.164 49.0674 100.132C49.0674 99.1008 49.9031 98.2647 50.9341 98.2647Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M34.7209 49.3326C35.7519 49.3326 36.5876 50.1687 36.5876 51.2002C36.5876 52.2317 35.7519 53.0678 34.7209 53.0678C33.69 53.0678 32.8542 52.2317 32.8542 51.2002C32.8542 50.1687 33.69 49.3326 34.7209 49.3326Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M50.9341 49.3326C51.965 49.3326 52.8008 50.1687 52.8008 51.2002C52.8008 52.2317 51.965 53.0678 50.9341 53.0678C49.9031 53.0678 49.0674 52.2317 49.0674 51.2002C49.0674 50.1687 49.9031 49.3326 50.9341 49.3326Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 82.2029C67.9346 82.2029 68.7704 83.0391 68.7704 84.0705C68.7704 85.102 67.9346 85.9382 66.9037 85.9382C65.8727 85.9382 65.037 85.102 65.037 84.0705C65.037 83.0391 65.8727 82.2029 66.9037 82.2029Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 82.2029C84.3616 82.2029 85.1974 83.0391 85.1974 84.0705C85.1974 85.102 84.3616 85.9382 83.3307 85.9382C82.2997 85.9382 81.464 85.102 81.464 84.0705C81.464 83.0391 82.2997 82.2029 83.3307 82.2029Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 82.2029C100.789 82.2029 101.624 83.039 101.624 84.0705C101.624 85.102 100.789 85.9382 99.7576 85.9382C98.7266 85.9382 97.8909 85.102 97.8909 84.0705C97.8909 83.039 98.7266 82.2029 99.7576 82.2029Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 65.7674C67.9346 65.7674 68.7704 66.6036 68.7704 67.635C68.7704 68.6665 67.9346 69.5027 66.9037 69.5027C65.8727 69.5027 65.037 68.6665 65.037 67.635C65.037 66.6036 65.8727 65.7674 66.9037 65.7674Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 65.7677C84.3616 65.7677 85.1974 66.6039 85.1974 67.6353C85.1974 68.6668 84.3616 69.503 83.3307 69.503C82.2997 69.503 81.464 68.6668 81.464 67.6353C81.464 66.6039 82.2997 65.7677 83.3307 65.7677Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 65.7677C100.789 65.7677 101.624 66.6039 101.624 67.6353C101.624 68.6668 100.789 69.503 99.7576 69.503C98.7266 69.503 97.8909 68.6668 97.8909 67.6353C97.8909 66.6039 98.7266 65.7677 99.7576 65.7677Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 98.2644C67.9346 98.2644 68.7704 99.1005 68.7704 100.132C68.7704 101.163 67.9346 102 66.9037 102C65.8727 102 65.037 101.163 65.037 100.132C65.037 99.1005 65.8727 98.2644 66.9037 98.2644Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M66.9037 49.3322C67.9346 49.3322 68.7704 50.1684 68.7704 51.1998C68.7704 52.2313 67.9346 53.0675 66.9037 53.0675C65.8727 53.0675 65.037 52.2313 65.037 51.1998C65.037 50.1684 65.8727 49.3322 66.9037 49.3322Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 98.2644C84.3616 98.2644 85.1974 99.1005 85.1974 100.132C85.1974 101.163 84.3616 102 83.3307 102C82.2997 102 81.464 101.163 81.464 100.132C81.464 99.1005 82.2997 98.2644 83.3307 98.2644Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M83.3307 49.3322C84.3616 49.3322 85.1974 50.1684 85.1974 51.1998C85.1974 52.2313 84.3616 53.0675 83.3307 53.0675C82.2997 53.0675 81.464 52.2313 81.464 51.1998C81.464 50.1684 82.2997 49.3322 83.3307 49.3322Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 98.2644C100.789 98.2644 101.624 99.1005 101.624 100.132C101.624 101.163 100.789 102 99.7576 102C98.7266 102 97.8909 101.163 97.8909 100.132C97.8909 99.1005 98.7266 98.2644 99.7576 98.2644Z"
+            fill="white" fill-opacity="0.08"></path>
+          <path
+            d="M99.7576 49.3322C100.789 49.3322 101.624 50.1684 101.624 51.1998C101.624 52.2313 100.789 53.0675 99.7576 53.0675C98.7266 53.0675 97.8909 52.2313 97.8909 51.1998C97.8909 50.1684 98.7266 49.3322 99.7576 49.3322Z"
+            fill="white" fill-opacity="0.08"></path>
+        </svg>
+      </span>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
+  <!-- ====== Back To Top Start -->
+  <a href="javascript:void(0)"
+    class="fixed left-auto items-center justify-center hidden w-10 h-10 text-white transition duration-300 ease-in-out rounded-md shadow-md back-to-top bottom-8 right-8 z-999 bg-primary hover:bg-dark">
+    <span class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
+  </a>
+  <!-- ====== Back To Top End -->
+
+  <!-- ====== All Scripts -->
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+
+    window.document.addEventListener("scroll", onScroll);
+
+    // Testimonial
+    const testimonialSwiper = new Swiper(".testimonial-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
